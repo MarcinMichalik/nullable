@@ -39,10 +39,17 @@
 
     <distributionManagement>
         <repository>
-            <id>github</id>
-            <name>GitHub MarcinMichalik Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/MarcinMichalik/nullable</url>
+            <id>bintray-marcinmichalik-Nullable</id>
+            <name>marcinmichalik-Nullable</name>
+            <url>https://api.bintray.com/maven/marcinmichalik/Nullable/nullable/;publish=1</url>
         </repository>
     </distributionManagement>
+    <!--    <distributionManagement>-->
+    <!--        <repository>-->
+    <!--            <id>github</id>-->
+    <!--            <name>GitHub MarcinMichalik Apache Maven Packages</name>-->
+    <!--            <url>https://maven.pkg.github.com/MarcinMichalik/nullable</url>-->
+    <!--        </repository>-->
+    <!--    </distributionManagement>-->
 
 </project>
