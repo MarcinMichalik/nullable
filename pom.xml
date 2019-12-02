@@ -7,7 +7,33 @@
 
     <groupId>me.michalik</groupId>
     <artifactId>nullable</artifactId>
-    <version>1.0</version>
+    <version>1.0.3</version>
+
+    <!-- Requirements to publish  https://central.sonatype.org/pages/requirements.html  -->
+
+    <name>nullable</name>
+    <description>Better Optional class for Java</description>
+    <url>http://github.com/MarcinMichalik/nullable</url>
+
+
+    <licenses>
+        <license>
+            <name>MIT</name>
+            <url>https://opensource.org/licenses/MIT</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Marcin Michalik</name>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/MarcinMichalik/nullable.git</connection>
+        <developerConnection>scm:git:ssh://github.com:MarcinMichalik/nullable.git</developerConnection>
+        <url>http://github.com/MarcinMichalik/nullable/tree/master</url>
+    </scm>
 
     <dependencies>
         <dependency>
@@ -34,6 +60,32 @@
                     <target>8</target>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.0.4</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.1.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 
@@ -41,15 +93,7 @@
         <repository>
             <id>bintray-marcinmichalik-Nullable</id>
             <name>marcinmichalik-Nullable</name>
-            <url>https://api.bintray.com/maven/marcinmichalik/Nullable/nullable/;publish=1</url>
+            <url>https://api.bintray.com/maven/marcinmichalik/Nullable/me.michalik:nullable/;publish=1</url>
         </repository>
     </distributionManagement>
-    <!--    <distributionManagement>-->
-    <!--        <repository>-->
-    <!--            <id>github</id>-->
-    <!--            <name>GitHub MarcinMichalik Apache Maven Packages</name>-->
-    <!--            <url>https://maven.pkg.github.com/MarcinMichalik/nullable</url>-->
-    <!--        </repository>-->
-    <!--    </distributionManagement>-->
-
 </project>
