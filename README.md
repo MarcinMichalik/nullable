@@ -1,3 +1,4 @@
+[ ![Download](https://api.bintray.com/packages/marcinmichalik/Nullable/me.michalik%3Anullable/images/download.svg) ](https://bintray.com/marcinmichalik/Nullable/me.michalik%3Anullable/_latestVersion)
 # Nullable
 
 **In shortcut:** Better Optional class for Java :) 
