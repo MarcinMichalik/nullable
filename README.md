@@ -14,7 +14,7 @@ Add to pom.xml dependency
 <dependency>
   <groupId>me.michalik</groupId>
   <artifactId>nullable</artifactId>
-  <version>1.0</version>
+  <version>1.0.3</version>
 </dependency>
 ```
 
